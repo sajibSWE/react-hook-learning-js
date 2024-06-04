@@ -1,10 +1,10 @@
-import { createContext, useState } from 'react';
+import { createContext, useState } from 'react'
 
-export const GlobalContext = createContext();
+export const GlobalContext = createContext()
 
 export default function GlobalState({ children }) {
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('light')
 
   return (
     <GlobalContext.Provider value={{ theme, setTheme }}>
